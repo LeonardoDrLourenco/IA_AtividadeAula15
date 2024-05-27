@@ -1,0 +1,14 @@
+A função 'minimax' é definida e na primeira linha e verifica como está o jogo, se ele já acabou ou não.
+São feitos três If para verificar se houve vitória, se ==10 a vítoria é do jogador, se -10 é vitoria do oponente e 0 caso de empate.
+Caso o jogo não tenha acabado, é gerado todas as jogadas possíveis para o jogador atual.
+A função minimax é sempre chamada recursivamente depois que ele verifica todas as jogadas possíveis.
+
+Na primeira iteração, caso o jogo não tenha acabado, gera todas as jogadas possíveis para o oponente entrando no else. Então ele chama recursivamente o minimax, aumentando a profundidade para 1 e retorna o menor valor encontrado possível.
+
+Na segunda iteração, após entrar no 1, continua gerando as jogadas possíveis, mas para o jogador, também chama usando a recursividade, e aumenta em 1 a profundidade também. Então retorna o maior valor que encontrou.
+
+Na tercira iteração, a chamada recursiva anterior volta e então a profundidade agora é 0, mas continua gerando todas as jogadas possíveis e usando recursividade para encontrar melhores jogadas possíveis.
+
+Na quarta iteração, mantém o padrão das anteriores.
+
+Na quinta o processo é repetido também, sempre buscando encontrar a melhor jogada possível e usando recursividade. Só alternando entre computador e jogador até encontrar o vencedor.
